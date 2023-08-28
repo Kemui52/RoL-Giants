@@ -1,0 +1,7 @@
+How did we even set this up?
+- Ran ModPack.exe to get basic mod XML files.
+- Used ROL Big Archiver to extract the multiplayer_data.big in .\data\patch8
+- Copied its contents into the game's directory.
+- Moved data.big and multiplayer_data.big out of the root data directory.
+- Moved soundinfo.big out, as well, so audio.xml can be read from.
+- That's all?

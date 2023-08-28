@@ -1,0 +1,2408 @@
+<!-- File: unit_materials.xml -->
+<!-- Summary: Defines named "materials" for units in the game to use. 
+     The information provided allows the artists to specify which shader a unit mesh
+     should use in addition to specifying different textures for the different texture 
+     semantics the shader uses. -->
+<!-- Note: Please remember that elements are defined in all upper caps, and attributes
+	 are defined in all lower caps. -->
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Phil Teschner (private) -->
+<ROOT>
+  <!--Alim Units-->
+  <MATERIAL material_name="blankammo.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="blankammo.tga" role="diffusemap" category="effects"/>
+    <TEXTURE name="blankammo.tga" role="normalmap" category="effects"/>
+    <TEXTURE name="blankammo.tga" role="teamcolormap" category="effects"/>
+  </MATERIAL>
+  <MATERIAL material_name="firescout.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="firescout_diffuse.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="firescout_dot3.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="firescout_team.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="firescout_shadow.fx" base_material_name="texture_shadowmapfloat.fx">
+    <TEXTURE name="firescout_diffuse.tga" role="diffusemap" category="Alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="starry.fx" base_material_name="envdistortion.fx">
+    <TEXTURE name="envdistortion_diffuse.tga" role="diffusemap" category="effects"/>
+    <TEXTURE name="starfield_1.tga" role="normalmap" category="effects"/>
+    <TEXTURE name="starfield_1.tga" role="teamcolormap" category="effects"/>
+    <TEXTURE name="starfield.dds" role="bonusmap" category="alim" environment_map="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="molten_afreet_hi.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="molten_afreet_diffuse_hi.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="afreet_dot3_512.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="molten_afreet_team_hi.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="molten_afreet.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="molten_afreet_diffuse.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="afreet_dot3_256.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="molten_afreet_team.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="afreet.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="afreet_diffuse_256.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="afreet_dot3_256.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="afreet_team_256.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Kaliph.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Kaliph_diffuse_512.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="Kaliph_dot3_512.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="Kaliph_team_512.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="belisari_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="belisari_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="belisari_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="belisari_team_hi.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="belisari.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="belisari_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="belisari_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="belisari_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="baby_manta.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="baby_manta_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="baby_manta_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="sand_manta_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="scaled_manta.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="scaled_manta_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="scaled_manta_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="sand_manta_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="wild_manta.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="sand_manta_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="sand_manta_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="sand_manta_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="glassheartseeker_manta_hi.fx" base_material_name="darkglassteamcolor.fx">
+    <TEXTURE name="glassmanta_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="glassmanta_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="glassmanta_env_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="glassmanta_env_hi.tga" role="teamcolormap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="dunemanta.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="dunemanta_diffuse_256.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="manta_dot3_256.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="manta_team_256.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="dunemanta_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="dunemanta_diffuse_256.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="manta_dot3_256.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="manta_team_hi.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="belisari_manta.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="hero_manta_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="manta_dot3_256.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="hero_manta_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="heartseeker_manta.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="manta_diffuse_256.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="manta_dot3_256.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="manta_team_256.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="heartseeker_manta_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="manta_diffuse_256.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="manta_dot3_256.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="manta_team_hi.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="belisari_manta_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="hero_manta_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="manta_dot3_256.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="hero_manta_team_hi.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="alim_citizen.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="alim_citizen_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="alim_citizen_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="alim_citizen_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="adromelek.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="adromelek_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="adromelek_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="adromelek_team.tga" role="teamcolormap" category="alim"/>
+    <!--<COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+		<COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>-->
+  </MATERIAL>
+  <MATERIAL material_name="adromelek_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="adromelek_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="adromelek_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="adromelek_team_hi.tga" role="teamcolormap" category="alim"/>
+    <!--<COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+		<COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>-->
+  </MATERIAL>
+  <MATERIAL material_name="alim_citizen_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="alim_citizen_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="alim_citizen_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="alim_citizen_team_hi.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="citywalker.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="citywalker_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="citywalker_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="dunewalker_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="dunewalker_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="dunewalker_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="dunewalker_team_hi.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="dunewalker.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="dunewalker_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="dunewalker_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="alimwalker.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="alimwalker_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="alimwalker_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="alimwalker_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="Dunescorpion_hi.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="Dunescorpion_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="Dunescorpion_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="Dunescorpion_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".6" g=".9" b=".2" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b=".3" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="Dunescorpion.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="Dunescorpion_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="Dunescorpion_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="Dunescorpion_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".6" g=".9" b=".2" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b=".3" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="arri_scorpionrider.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="arri_scorpion_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="arri_scorpion_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="arri_scorpion_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g=".9" b=".5" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b=".8" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="arri_scorpionrider_hi.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="arri_scorpion_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="arri_scorpion_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="arri_scorpion_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g=".9" b=".5" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b=".8" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="fireswarm.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="fireswarm_diffuse_128.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="damanhur_dot3.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="fireswarm_team_128.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="damanhur_rukh.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="damanhur_rukh_diffuse_hi.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="damanhur_rukh_dot3_hi.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="damanhur_rukh_team_hi.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="damanhur.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="damanhur_diffuse.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="damanhur_dot3.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="damanhur_team.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Fire_golem.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="Fire_golem_diffuse.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="Fire_golem_dot3.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="Fire_golem_team.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="firegolem_uber.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="firegolem_uber_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="firegolem_uber_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="firegolem_uber_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="lava_spider.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="Fire_rook_diffuse.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="Fire_rook_dot3.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="lava_spider_team.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Fire_rook.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="Fire_rook_diffuse.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="Fire_rook_dot3.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="Fire_rook_team.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="lava_spider_hi.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="Fire_rook_diffuse_hi.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="Fire_rook_dot3_hi.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="lava_spider_team_hi.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Fire_rook_hi.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="Fire_rook_diffuse_hi.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="Fire_rook_dot3_hi.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="Fire_rook_team_hi.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="damanhur_hi.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="damanhur_diffuse_hi.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="damanhur_dot3_hi.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="damanhur_team_hi.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="damanhurwrath.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="damanhur_diffuse.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="damanhur_dot3.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="damanhur_team.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="damanhurwrath_hi.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="damanhur_diffuse_hi.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="damanhur_dot3_hi.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="damanhur_team_hi.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="dahkla_hi.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="dahkla_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="dahkla_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="dahkla_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g=".9" b=".5" a=".6"/>
+    <COLOR_PROP semantic="glass_material_color" r=".3" g="0.6" b=".8" a=".5"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="dahkla.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="dahkla_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="dahkla_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="dahkla_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g=".9" b=".5" a=".6"/>
+    <COLOR_PROP semantic="glass_material_color" r=".3" g="0.6" b=".8" a=".5"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="magician_petstaff.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="petstaff_diffuse.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="petstaff_dot3.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="petstaff_team.tga" role="teamcolormap" category="ALIM"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="scorpionrider.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="scorpion_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="scorpion_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="scorpion_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g=".9" b=".5" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b=".8" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="alim_caravan.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="alim_caravan_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="alim_caravan_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="alim_caravan_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g=".9" b=".5" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b=".8" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="alim_caravan_hi.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="alim_caravan_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="alim_caravan_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="alim_caravan_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g=".9" b=".5" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b=".8" a="1"/>
+    <FX_PROP semantic="material_shininess" value="5"/>
+  </MATERIAL>
+  <MATERIAL material_name="scorpionrider_hi.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="scorpion_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="scorpion_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="scorpion_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g=".9" b=".5" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b=".8" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="sand_horror.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="horror_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="horror_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="horror_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g=".7" b=".1" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".2" g="0.3" b=".5" a=".7"/>
+  </MATERIAL>
+  <MATERIAL material_name="Elder_sand_horror.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="elder_horror_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="elder_horror_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="elder_horror_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".2" g=".3" b=".5" a="1"/>
+    <COLOR_PROP semantic="glass_material_color" r=".3" g=".7" b=".9" a=".5"/>
+  </MATERIAL>
+  <MATERIAL material_name="Elder_sand_horror_Hi.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="elder_horror_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="elder_horror_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="elder_horror_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".2" g=".3" b=".5" a="1"/>
+    <COLOR_PROP semantic="glass_material_color" r=".3" g=".7" b=".9" a=".5"/>
+  </MATERIAL>
+  <MATERIAL material_name="sand_horror_Hi.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="horror_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="horror_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="horror_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g=".7" b=".1" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".2" g="0.3" b=".5" a=".7"/>
+  </MATERIAL>
+  <MATERIAL material_name="Ghost_dragon.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="ghostdragon_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="Ghostdragon_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="ghostdragon_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r="1" g="1" b="1" a="1"/>
+    <COLOR_PROP semantic="glass_material_color" r="1" g="1" b="1" a="1"/>
+  </MATERIAL>
+  <MATERIAL material_name="salamander.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="salamander_diffuse.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="salamander_dot3.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="salamander_team.tga" role="teamcolormap" category="ALIM"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="wildsalamander.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="wildsalamander_diffuse.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="salamander_dot3.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="wildsalamander_team.tga" role="teamcolormap" category="ALIM"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="wildsalamander_hi.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="wildsalamander_diffuse_hi.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="salamander_dot3_hi.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="wildsalamander_team_hi.tga" role="teamcolormap" category="ALIM"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="salamander_hi.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="salamander_diffuse_hi.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="salamander_dot3_hi.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="salamander_team_hi.tga" role="teamcolormap" category="ALIM"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="spirit_worker.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name=".\\alim\\spirit_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\spirit_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\spirit_Team.tga" role="teamcolormap" category="ART_UNITS"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="spirit_worker_hi.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name=".\\alim\\spirit_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\spirit_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\spirit_Team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Alim_Glasscannon_gong.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="alim_glasscannon_crew_diffuse_512.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="alim_glasscannon_crew_dot3_512.tga" role="normalmap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="alim_efreet_hi.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="efreet_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="efreet_dot3_Hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="efreet_Team_Hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g=".9" b=".5" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b=".8" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="alim_efreet.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="efreet_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="efreet_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="efreet_Team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g="1" b=".5" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="adromelek_manta.fx" base_material_name="glasscannon.fx">
+    <TEXTURE name="adromelek_manta_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="adromelek_manta_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="adromelek_manta_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>
+  </MATERIAL>
+  <MATERIAL material_name="GlassDragon.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="darkglassdragon_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="darkglassdragon_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="darkglassdragon_team_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkglassdragon_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="GlassGolem.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="GlassGolem_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="GlassGolem_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="GlassGolem_team.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="GlassGolem_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="GlassGolem_Hi.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="GlassGolem_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="GlassGolem_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="GlassGolem_team_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="GlassGolem_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="DarkWalker_hi.fx" base_material_name="darkglassteamcolor.fx">
+    <TEXTURE name="Darkwalker_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="Darkwalker_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="darkwalker_env_Hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkwalker_env_Hi.tga" role="teamcolormap" category="alim"/>
+    <!--<COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+		<COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>-->
+  </MATERIAL>
+  <MATERIAL material_name="DarkWalker.fx" base_material_name="darkglassteamcolor.fx">
+    <TEXTURE name="Darkwalker_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="Darkwalker_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="darkwalker_env.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkwalker_env.tga" role="teamcolormap" category="alim"/>
+    <!--<COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+		<COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>-->
+  </MATERIAL>
+  <MATERIAL material_name="desertwalker.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="desertwalker_diffuse_128.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="desertwalker_team_128.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="GlassGenie.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="GlassGenie_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="GlassGenie_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="GlassGenie_team.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="GlassGenie_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="GlassGenie_hi.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="GlassGenie_diffuse_512.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="GlassGenie_dot3_512.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="GlassGenie_team_512.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="GlassGenie_team_512.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Theban.fx" base_material_name="darkglass.fx">
+    <TEXTURE name="theban_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="theban_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="theban_env.tga" role="glossmap" category="alim"/>
+    <!--<COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+		<COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>-->
+  </MATERIAL>
+  <MATERIAL material_name="Theban_hi.fx" base_material_name="darkglass.fx">
+    <TEXTURE name="theban_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="theban_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="theban_env_hi.tga" role="glossmap" category="alim"/>
+    <!--<COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+		<COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>-->
+  </MATERIAL>
+  <MATERIAL material_name="Alim_Glasscannon.fx" base_material_name="glasscannon.fx">
+    <TEXTURE name="alim_glasscannon_crew_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="alim_glasscannon_crew_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="alim_glasscannon_crew_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>
+  </MATERIAL>
+  <MATERIAL material_name="Alim_Glasscannon.fx" base_material_name="glasscannon.fx">
+    <TEXTURE name="alim_glasscannon_crew_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="alim_glasscannon_crew_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="alim_glasscannon_crew_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>
+  </MATERIAL>
+  <MATERIAL material_name="Alim_Glasscannon_hi.fx" base_material_name="glasscannon.fx">
+    <TEXTURE name="alim_glasscannon_crew_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="alim_glasscannon_crew_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="alim_glasscannon_crew_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>
+  </MATERIAL>
+  <MATERIAL material_name="Vaultkeeper_glowsword.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="vaultkeeper_glowsword_diffuse.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="vaultkeeper_sword_dot3.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="vaultkeeper_glowsword_team.tga" role="teamcolormap" category="ALIM"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Dunewalker_sword.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="Dunewalker_sword_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="vaultkeeper_sword_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="vaultkeeper_sword_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".9" g=".1" b=".3" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g=".4" b=".2" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="Vaultkeeper_sword.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="vaultkeeper_sword_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="vaultkeeper_sword_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="vaultkeeper_sword_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r=".5" g="1" b=".5" a=".5"/>
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+  <MATERIAL material_name="Vaultkeeper_low.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="Vaultkeeper_Diffuse_128.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="Vaultkeeper_team_128.tga" role="teamcolormap" category="ALIM"/>
+  </MATERIAL>
+  <MATERIAL material_name="spirit_miner_hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="spirit_miner_diffuse_hi.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="spirit_miner_dot3_hi.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="spirit_miner_team_hi.tga" role="teamcolormap" category="ALIM"/>
+  </MATERIAL>
+  <MATERIAL material_name="spirit_miner.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="spirit_miner_diffuse.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="spirit_miner_dot3.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="spirit_miner_team.tga" role="teamcolormap" category="ALIM"/>
+  </MATERIAL>
+  <MATERIAL material_name="Vaultkeeper.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="Vaultkeeper_Diffuse_128.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="Vaultkeeper_Dot3_128.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="Vaultkeeper_team_128.tga" role="teamcolormap" category="ALIM"/>
+  </MATERIAL>
+  <MATERIAL material_name="Vaultkeeper_hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="Vaultkeeper_Diffuse_hi.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="Vaultkeeper_Dot3_hi.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="Vaultkeeper_team_hi.tga" role="teamcolormap" category="ALIM"/>
+  </MATERIAL>
+  <MATERIAL material_name="magician.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="magician_Diffuse.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="magician_Dot3.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="magician_team.tga" role="teamcolormap" category="ALIM"/>
+  </MATERIAL>
+  <MATERIAL material_name="magician_hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="magician_Diffuse_512.tga" role="diffusemap" category="ALIM"/>
+    <TEXTURE name="magician_Dot3_512.tga" role="normalmap" category="ALIM"/>
+    <TEXTURE name="magician_team_512.tga" role="teamcolormap" category="ALIM"/>
+  </MATERIAL>
+  <MATERIAL material_name="fire_elemental.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="fire_elemental_diffuse.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="new_fire_swarm_dot3_hi.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="fire_elemental_team.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="fire_elemental_hi.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="fire_elemental_diffuse_hi.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="new_fire_swarm_dot3_hi.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="fire_elemental_team_hi.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="new_fire_swarm_hi.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="new_fire_swarm_diffuse_hi.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="new_fire_swarm_dot3_hi.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="new_fire_swarm_team_hi.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="glassheartseeker.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="glass_heartseeker_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="heartseeker_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="glass_heartseeker_team.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="glass_heartseeker_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="heartseeker.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="heartseeker_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="heartseeker_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="heartseeker_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="heartseeker_sword.fx" base_material_name="glasscannon.fx">
+    <TEXTURE name="heartseeker_sword.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="heartseeker_sword_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="heartseeker_sword_team.tga" role="teamcolormap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="Puzzle_Cube_hi.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="puzzle_cube_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="puzzle_cube_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="puzzle_cube_team_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="puzzle_cube_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Puzzle_Cube.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="puzzle_cube_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="puzzle_cube_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="puzzle_cube_team.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="puzzle_cube_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="glass_cannon_hi.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="glass_cannon_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="glass_cannon_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="glass_cannon_team_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="glass_cannon_team_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="glass_cannon.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="glass_cannon_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="glass_cannon_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="glass_cannon_team.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="glass_cannon_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="glass_scorpion.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="darkglassgolem_uber_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="darkglassgolem_uber_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="glass_scorpion_env.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="glass_scorpion_env.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="glass_scorpion_hi.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="darkglassgolem_uber_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="darkglassgolem_uber_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="glass_scorpion_env_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="glass_scorpion_env_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Arri_hi.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Arri_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="Arri_dot3_hi.tga" role="normalmap" category="alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="Arri.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Arri_diffuse_512.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="Arri_dot3_512.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="Arri_team_512.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>
+  </MATERIAL>
+  <MATERIAL material_name="Thuran_Hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\alim\\Thuran_Diffuse_Hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\Thuran_Dot3_Hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\Thuran_Team_Hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Thuran.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\alim\\Thuran_Diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\Thuran_Dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\Thuran_Team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Sanddragon.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\alim\\Sanddragon_Diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\Sanddragon_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\Sanddragon_Team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Sanddragon_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\alim\\Sanddragon_Diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\Sanddragon_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\Sanddragon_Team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="VK_shield.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="scorpion_rider_shield_diffuse.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="scorpion_rider_shield_dot3.tga" role="normalmap" category="Alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="Rocks.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="whirl_rock_diffuse.tga" role="diffusemap" category="effects"/>
+    <TEXTURE name="whirl_rock_dot3.tga" role="normalmap" category="effects"/>
+  </MATERIAL>
+  <MATERIAL material_name="Salamanderqueen.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\alim\\salamanderqueen_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\salamanderqueen_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\salamanderqueen_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Salamanderqueen_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\alim\\salamanderqueen_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\salamanderqueen_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\alim\\salamanderqueen_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="droughtsun.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="drought_sun_diffuse.tga" role="diffusemap" category="effects"/>
+    <TEXTURE name="drought_sun_Dot3.tga" role="normalmap" category="effects"/>
+    <TEXTURE name="drought_sun_Team.tga" role="teamcolormap" category="effects"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Glassprisim.fx" base_material_name="glasscannon.fx">
+    <TEXTURE name="Glassprisim_diffuse.tga" role="diffusemap" category="effects"/>
+    <TEXTURE name="Glassprisim_dot3.tga" role="normalmap" category="effects"/>
+    <TEXTURE name="Glassprisim_team.tga" role="teamcolormap" category="effects"/>
+    <COLOR_PROP semantic="reflect_color" r="4" g="0.3" b=".2" a="1"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.6" a="2"/>
+  </MATERIAL>
+  <MATERIAL material_name="prison_glass_02.fx" base_material_name="darkglass.fx" use_tileset="0">
+    <TEXTURE name="dark_glass_01_diffuse.tga" role="diffusemap" category="effects"/>
+    <TEXTURE name="dark_glass_01_dot3.tga" role="normalmap" category="effects"/>
+    <TEXTURE name="dark_glass_env.tga" role="glossmap" category="effects"/>
+    <TEXTURE name="environment.dds" role="environmentmap" category="BIOMES"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>
+  </MATERIAL>
+  <MATERIAL material_name="glass_horror.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="glass_horror_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="glass_horror_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="glass_horror_team.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="glass_horror_team.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="darkglass_whelp.fx" base_material_name="darkglass.fx" use_tileset="0">
+    <TEXTURE name="darkglass_whelp_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="darkglass_whelp_diffuse.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass_whelp_team.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="darkglass_whelp_hi.fx" base_material_name="darkglass.fx" use_tileset="0">
+    <TEXTURE name="darkglass_whelp_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="darkglass_whelp_diffuse_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass_whelp_team_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="glass_spider_boss_hi.fx" base_material_name="darkglass.fx" use_tileset="0">
+    <TEXTURE name="glass_spider_boss_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="glass_spider_boss_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="glass_spider_boss_team_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="glass_spider_boss.fx" base_material_name="darkglass.fx" use_tileset="0">
+    <TEXTURE name="glass_spider_boss_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="glass_spider_boss_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="glass_spider_boss_team.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="darkglassgolem_uber.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="darkglassgolem_uber_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="darkglassgolem_uber_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="darkglassgolem_uber_env.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkglassgolem_uber_env.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="darkglassgolem_uber_hi.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="darkglassgolem_uber_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="darkglassgolem_uber_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="darkglassgolem_uber_env_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkglassgolem_uber_env_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="armored_glass_spider.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="armored_dark_spider.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="armored_dark_spider_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="armored_dark_spider_env.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="armored_dark_spider_env.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="armored_glass_spider_hi.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="armored_dark_spider_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="armored_dark_spider_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="armored_dark_spider_env_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="armored_dark_spider_env_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="adromelek_Dark_glass_spider_hi.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="adromelek_dark_spider_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="adromelek_dark_spider_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="adromelek_dark_spider_env_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="adromelek_dark_spider_env_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="adromelek_Dark_glass_spider.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="adromelek_dark_spider.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="adromelek_dark_spider_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="adromelek_dark_spider_env.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="adromelek_dark_spider_env.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Dark_glass_spider.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="dark_spider.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="dark_spider_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="dark_spider_env.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="dark_spider_env.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Dark_glass_spiderHI.fx" base_material_name="darkglassteamcolor.fx" use_tileset="0">
+    <TEXTURE name="dark_spider_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="dark_spider_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="environmentmap" category="BIOMES" environment_map="1"/>
+    <TEXTURE name="dark_spider_env_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="dark_spider_env_hi.tga" role="teamcolormap" category="alim"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Darkglass_spider.fx" base_material_name="darkglass.fx" use_tileset="0">
+    <TEXTURE name="darkglass_spider_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="darkglass_spider_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass_spider_env.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Darkglass_spider_HI.fx" base_material_name="darkglass.fx" use_tileset="0">
+    <TEXTURE name="darkglass_spider_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="darkglass_spider_dot3_hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass_spider_env_hi.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Heartseeker_arrow.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="whirl_rock_diffuse.tga" role="diffusemap" category="effects"/>
+    <TEXTURE name="whirl_rock_dot3.tga" role="normalmap" category="effects"/>
+  </MATERIAL>
+  <!--Cuotl Units-->
+  <MATERIAL material_name="citizen_cuotl_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\citizen_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\citizen_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\citizen_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="citizen_cuotl.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name=".\\cuotl\\citizen_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\citizen_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="cuotlwalker.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\cuotl\\cuotlwalker_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\cuotlwalker_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\cuotlwalker_tc.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="priest_hat.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\cuotl\\priest_diffuse_hat.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\priest_dot3_hat.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\priest_team_hat.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="priest_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\cuotl\\priest_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\priest_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\priest_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="priest_staff.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\priest_staff_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\priest_staff_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\priest_staff_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="priest.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\cuotl\\priest_diffuse_128.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\priest_dot3_128.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\priest_team_128.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="unholyark.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\unholy_Ark_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\holy_Ark_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\unholy_Ark_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Ark.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\holy_Ark_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\holy_Ark_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\holy_Ark_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Ark_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\holy_Ark_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\holy_Ark_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\holy_Ark_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="cuotl_caravan.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\cuotl_caravan_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\cuotl_caravan_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\cuotl_caravan_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="cuotl_caravan_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\cuotl_caravan_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\cuotl_caravan_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\cuotl_caravan_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="stormeagle.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\stormeagle_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormeagle_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormeagle_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="stormeagle_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\stormeagle_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormeagle_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormeagle_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Stormgod.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\stormgod_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormgod_normal_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormgod_teamcolor_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Stormgod.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\stormgod_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormgod_normal.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormgod_teamcolor.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="DEATHSPHERE.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\deathsphere_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\deathsphere_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\deathsphere_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="DEATHSPHERE_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\deathsphere_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\deathsphere_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\deathsphere_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Deathgod.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\deathgod_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\deathgod_normal.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\deathgod_teamcolor.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Suncannon.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\sun_cannon_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\sun_cannon_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\sun_cannon_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Suncannon_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\sun_cannon_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\sun_cannon_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\sun_cannon_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Deathgod_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\deathgod_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\deathgod_normal_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\deathgod_teamcolor.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="scouteye.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\scout_eye_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\scout_eye_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\scout_eye_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="scouteye_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\scout_eye_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\scout_eye_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\scout_eye_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="sentinel_perf.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name=".\\cuotl\\sentinel_perf_Diffuse_128.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\sentinel_perf_team_128.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="fallensentinel.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name=".\\cuotl\fallen_sentinel_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\fallen_sentinel_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="fallensentinel_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\cuotl\fallen_sentinel_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\fallen_sentinel_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\fallen_sentinel_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="heretic_cuotl.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name=".\\cuotl\\heretic_cuotl_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\heretic_cuotl_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="kakoolha.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\cuotl\\kakoolha_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\kakoolha_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\kakoolha_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="kakoolhamount.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\kakoolhamount_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\kakoolhamount_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\kakoolhamount_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="kakoolha_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\cuotl\\kakoolha_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\kakoolha_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\kakoolha_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="kakoolhamount_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\cuotl\\kakoolhamount_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\kakoolhamount_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\kakoolhamount_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="seige_elephant.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\cuotl\\seige_elephant_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\seige_elephant_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\seige_elephant_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="seige_elephant_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\cuotl\\seige_elephant_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\seige_elephant_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\seige_elephant_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Sungod_256.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\sungod_diffuse_256.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\sungod_dot3_256.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\sungod_team_256.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Sungod_mirror.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name=".\\cuotl\\sungodmirror_diffuse_256.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\sungod_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\sungodmirror_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Sungod_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\sungod_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\sungod_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\sungod_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="fallenidol_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\fallen_Idol_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\Sun_Idol_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\fallen_Idol_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="fallenidol.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\fallen_Idol_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\Sun_Idol_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\fallen_Idol_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Sunidol.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\Sun_Idol_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\Sun_Idol_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\Sun_Idol_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Sunidol_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\Sun_Idol_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\Sun_Idol_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\Sun_Idol_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Gorilla_boss.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\Gorilla_boss_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\gorilla_boss_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\gorilla_boss_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="fallensnake_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\fallen_snake_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\viperknight_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\fallen_snake_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="fallensnake.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\fallen_snake_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\viperknight_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\fallen_snake_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="viperknight.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\viperknight_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\viperknight_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\viperknight_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="viperknight_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\viperknight_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\viperknight_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\viperknight_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="MoonGod.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\moongod_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\moongod_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\moongod_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="MoonGod_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\moongod_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\moongod_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\moongod_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="raingod.fx" base_material_name="rain_god.fx">
+    <TEXTURE name=".\\cuotl\\raingod_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\raingod_normal.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\raingod_tc.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="stormdisk.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\stormdisk_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormdisk_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormdisk_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="stormdisk_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\stormdisk_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormdisk_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\stormdisk_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="fallenjaguar_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\fallen_jaguar_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\jaguar_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\fallen_jaguar_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="fallenjaguar.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\fallen_jaguar_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\jaguar_dot3_256.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\fallen_jaguar_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="jaguarknight.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\jaguar_diffuse_256.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\jaguar_dot3_256.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\jaguar_team_256.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="highpriest_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\highpriest_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\highpriest_diffuse.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\highpriest_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="jaguarknight_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\jaguar_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\jaguar_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\jaguar_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="moonflyer.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\moonflyer_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\quetzal_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\moonflyer_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="quetzal_fighter.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\quetzal_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\quetzal_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\quetzal_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="quetzal_fighter_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name=".\\cuotl\\quetzal_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\quetzal_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\cuotl\\quetzal_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="cuotl_personal_shield.fx" base_material_name="personal_shield.fx" use_tileset="0">
+    <TEXTURE name="cuotl_shield_a.tga" role="diffusemap" category="BUILDINGS_CUOT_TEXTURES"/>
+    <TEXTURE name="cuotl_shield_fade.tga" role="bonusmap" category="BUILDINGS_CUOT_TEXTURES"/>
+  </MATERIAL>
+  <MATERIAL material_name="vengeance_reintegrate_spell.fx" base_material_name="vengeance_reintegrate.fx" use_tileset="0">
+    <TEXTURE name="cuotl_heal_a.tga" role="diffusemap" category="BUILDINGS_CUOT_TEXTURES"/>
+    <TEXTURE name="cuotl_shield_fade.tga" role="bonusmap" category="BUILDINGS_CUOT_TEXTURES"/>
+  </MATERIAL>
+  <MATERIAL material_name="Vengeance.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name="cuotl_base_texture_diffuse_unit.tga" role="diffusemap" category="BUILDINGS_CUOT_TEXTURES"/>
+    <TEXTURE name="cuotl_base_texture_Normal.tga" role="normalmap" category="BUILDINGS_CUOT_TEXTURES"/>
+    <TEXTURE name="cuotl_base_texture_teamcolor_unit.tga" role="teamcolormap" category="BUILDINGS_CUOT_TEXTURES"/>
+    <COLOR_PROP semantic="reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <!--Kahan Units-->
+  <MATERIAL material_name="barbarian.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Kahan_Grunt_diffuse_128.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="Kahan_Grunt_dot3_128.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="Kahan_Grunt_tc_128.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="barbarian_weapons.fx" base_material_name="Dot3teamcolor.fx">
+    <TEXTURE name=".\\Kahan\\Kahan_Grunt_weapons.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\Kahan_Grunt_weapons_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\Kahan_Grunt_weapons_tc.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Kingogre_weapons.fx" base_material_name="Dot3.fx">
+    <TEXTURE name=".\\Kahan\\King_ogreweapons_diff.TGA" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\King_ogreweapons_dot3.TGA" role="normalmap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="berserker_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="berserker_diffuse_256.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="berserker_256_dot3.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="berserker_256_tc.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="berserker.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="bereserker_Diffuse.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="bereserker_Dot3.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="bereserker_Team.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="berserker_mount.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="berserker_mount_diffuse.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="berserker_mount_dot3.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="berserker_mount_team.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="berserker_mount_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="berserker_mount_diffuse_hi.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="berserker_mount_dot3_hi.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="berserker_mount_team_hi.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="berserker_occ.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="berserker_diffuse_256.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="berserker_256_dot3.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="berserker_256_tc.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="Ettin.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Ettin_diffuse_512.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="Ettin_dot3_512.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="Ettin_team_512.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="Kahan_Peasant.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="peasant_diffuse_512.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="peasant_dot3_512.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="peasant_tc_512.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="kahanwalker.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\Kahan\\kahanwalker_diffuse_512.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\kahanwalker_dot3_512.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\kahanwalker_tc_512.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="nomad.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\Kahan\\peasant_diffuse_256.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\peasant_dot3_256.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\peasant_tc_256.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Ogre.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Khan_ogre_diffuse_512.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="Khan_ogre_dot3_512.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="Khan_ogre_TC_512.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="Ogre2.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Khan_ogre_diffuse_512.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="Khan_ogre_dot3_512.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="Khan_ogre_TC_512.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="Ogre128.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Khan_ogre_diffuse_128.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="Khan_ogre_dot3_512.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="Khan_ogre_TC_512.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="Ogre256.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Khan_ogre_diffuse_256.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="Khan_ogre_dot3_512.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="Khan_ogre_TC_512.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="ogreking256.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="ogreking_diffuse_256.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="ogreking_dot3_256.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="ogreking_tc_256.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="ogreking.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="ogreking_diffuse_512.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="ogreking_512_dot3.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="ogreking_512_tc.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="StoneOgre.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="StoneOgre_diffuse_512.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="Stoneogre_dot3_512.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="StoneOgre_TC_512.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="uber_ogre_tc.fx" base_material_name="Dot3teamcolor.fx">
+    <TEXTURE name="airbase_6_s.tga" role="diffusemap" category="ART"/>
+    <TEXTURE name="aluminum.tga" role="normalmap" category="ART"/>
+    <TEXTURE name="AnchorSplash.tga" role="teamcolormap" category="ART"/>
+  </MATERIAL>
+  <MATERIAL material_name="wartotem_hat.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\Kahan\\wartotem_hat_diffuse_256.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\wartotem_hat_dot3_256.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\wartotem_hat_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Gurr.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Gurr_diffuse.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="Gurr_dot3.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="Gurr_team.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="Gurr_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Gurr_diffuse_Hi.tga" role="diffusemap" category="KAHAN"/>
+    <TEXTURE name="Gurr_dot3_Hi.tga" role="normalmap" category="KAHAN"/>
+    <TEXTURE name="Gurr_team_Hi.tga" role="teamcolormap" category="KAHAN"/>
+  </MATERIAL>
+  <MATERIAL material_name="wartotem_totem.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\Kahan\\wartotem_totem_diffuse_512.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\wartotem_totem_dot3_512.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\wartotem_totem_tc_512.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="yontash_rider.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\Kahan\\yontash_rider_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\yontash_rider_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\yontash_rider_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="yontash_rider_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\Kahan\\yontash_rider_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\yontash_rider_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\yontash_rider_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="yontash_mount.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\Kahan\\yontash_mount_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\yontash_mount_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\yontash_mount_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="yontash_mount_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\Kahan\\yontash_mount_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\yontash_mount_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\yontash_mount_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="yontash.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name=".\\Kahan\\yontash_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\yontash_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\Kahan\\yontash_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <!--Vinci Units-->
+  <MATERIAL material_name="rocketshell.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="rocketshell_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="rocketshell_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="rocketshell_team.tga" role="teamcolormap" category="VINCI"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="MiniRocket.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="air_destroyer_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="air_destroyer_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="air_destroyer_team.tga" role="teamcolormap" category="VINCI"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="TracerShell.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="TracerShell_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="TracerShell_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="TracerShell_team.tga" role="teamcolormap" category="VINCI"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="LeonoraFlyer_hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="lanora_vehicle_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="lanora_vehicle_Dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="lanora_vehicle_Team_hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="doge_gun.fx" base_material_name="rain_god.fx">
+    <TEXTURE name=".\\vinci\\doge_gun_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\vinci\\doge_gun_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\vinci\\doge_gun_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="LeonoraFlyer.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="lanora_vehicle_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="lanora_vehicle_Dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="lanora_vehicle_Team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Derigible.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="Derigable_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Derigable_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Derigable_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Derigible_Heavy.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="Derigable_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Derigable_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Derigable_heavy_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Leonora_flyer_prop.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="leonora_flyer_prop.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="blank.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="blank.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="doge_gun.fx" base_material_name="rain_god.fx">
+    <TEXTURE name=".\\vinci\\doge_gun_diffuse_hi.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name=".\\vinci\\doge_gun_dot3_hi.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name=".\\vinci\\doge_gun_team_hi.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="Derigible_Hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="Derigable_diffuse_HI.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Derigable_dot3_HI.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Derigable_team_HI.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="35"/>
+  </MATERIAL>
+  <MATERIAL material_name="AirDestroyer.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="air_destroyer_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="air_destroyer_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="air_destroyer_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="AirDestroyer_Hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="air_destroyer_diffuse_HI.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="air_destroyer_dot3_HI.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="air_destroyer_team_HI.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="AirDestroyerProp.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="air_destroyer_prop.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="blank.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="blank.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="battaglion.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="battaglion_diffuse.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="battaglion_Dot3.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="battaglion_Team.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="battaglion_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="battaglion_diffuse_hi.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="battaglion_Dot3_hi.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="battaglion_Team_hi.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Carlini_256.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="carlini_diffuse_256.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="carlini_Dot3_256.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="carlini_Team_256.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Carlini.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="carlini_diffuse_512.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="carlini_Dot3_512.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="carlini_Team_512.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="scavenger_ammo.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="scavenger_ammo_diffuse.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="scavenger_ammo_dot3.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="scavenger_ammo_team.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="backpack.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="backpack_diffuse.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="backpack_dot3.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="backpack_team.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Carlini_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="carlini_diffuse_hi.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="carlini_Dot3_hi.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="carlini_Team_hi.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="clockworkman_256.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="clockworkman_diffuse_256.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="clockworkman_dot3_256.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="clockwork_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="cuotl_clockwork.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name="cuotl_clockwork_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="cuotl_clockwork_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="cuotl_clockwork_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Scavengergrunt.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="scavengergrunt_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="clockwork_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="clockwork_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="clockworkman.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="clockwork_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="clockwork_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="clockwork_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="clockworkman_Hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="clockwork_diffuse_Hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="clockwork_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="clockwork_team_Hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="Clockworkspider_mid.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="clockwork_spider_diffuse_mid.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="clockwork_spider_dot3_mid.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="clockwork_spider_team_mid.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Scavengerspider.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="scavenger_spider_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="clockwork_spider_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="clockwork_spider_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Clockworkspider.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="clockwork_spider_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="clockwork_spider_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="clockwork_spider_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Clockworkspider_Hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="clockwork_spider_diffuse_Hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="clockwork_spider_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="clockwork_spider_team_Hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="distruzio_128.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="distruzio_diffuse_128.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="distruzio_Dot3_128.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="distruzio_Team_128.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="distruzio_256.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="distruzio_diffuse_256.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="distruzio_Dot3_256.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="distruzio_Team_256.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="distruzio.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="distruzio_diffuse_512.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="distruzio_Dot3_512.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="distruzio_Team_512.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="distruzio_mech.fx" base_material_name="scrollingclockwork.fx">
+    <TEXTURE name="distruzio_mech_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="distruzio_mech_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="distruzio_mech_team_hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="distruzio_mech_128.fx" base_material_name="scrollingclockwork.fx">
+    <TEXTURE name="distruzio_mech_diffuse_128.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="distruzio_mech_dot3_128.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="distruzio_mech_team_128.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="distruzio_mech_256.fx" base_material_name="scrollingclockwork.fx">
+    <TEXTURE name="distruzio_mech_diffuse_256.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="distruzio_mech_dot3_256.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="distruzio_mech_team_256.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="condottieri_swordsman_weapon.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="condottieri_swordsman_diffuse_128.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="condottieri_swordsman_dot3_128.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="condottieri_swordsman_team_128.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="condottieri_swordsman_weapon_low.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="condottieri_swordsman_diffuse_64.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="condottieri_swordsman_dot3_64.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="condottieri_swordsman_team_64.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Doge.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="doge_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="doge_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="doge_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Doge_Hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="doge_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="doge_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="doge_team_hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="DogeVehicle.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="Doge_vehicle_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Doge_vehicle_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Doge_vehicle_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="DogeVehicle_hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="Doge_vehicle_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Doge_vehicle_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Doge_vehicle_team_hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Doge_walker_low.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="Doge_walker_diffuse_128.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Doge_walker_dot3_128.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Doge_walker_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Doge_walker.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="Doge_walker_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Doge_walker_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Doge_walker_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Doge_walker_hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="Doge_walker_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Doge_walker_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Doge_walker_team_hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="dragoon.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="dragoon_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="dragoon_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="dragoon_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="dragoon_Hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="dragoon_diffuse_Hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="dragoon_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="dragoon_team_Hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="giacomo_ctw.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="giacomo_diffuse_1024.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="giacomo_dot3_1024.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="giacomo_team_1024.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="giacomo.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="giacomo_diffuse_128.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="giacomo_dot3_128.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="giacomo_team_128.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="giacomo_mirror.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="giacomo_diffuse_mirror_128.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="giacomo_dot3_128.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="giacomo_team_128.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="giacomo_hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="giacomo_diffuse_512.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="giacomo_dot3_512.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="giacomo_team_512.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="giacomo_desertvehicle.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="giacomo_desertvehicle_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="giacomo_desertvehicle_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="giacomo_vehicle_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="giacomo_desertvehicle_hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="giacomo_desertvehicle_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="giacomo_desertvehicle_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="giacomo_vehicle_team_hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="giacomo_cuotlvehicle_mirror.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name="giacomo_cuotlvehicle_mirror_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="giacomo_cuotlvehicle_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="giacomo_cuotlvehicle_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="giacomo_cuotlvehicle.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name="giacomo_cuotlvehicle_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="giacomo_cuotlvehicle_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="giacomo_cuotlvehicle_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="giacomo_cuotlvehicle_hi.fx" base_material_name="cuotlpulsereflect.fx">
+    <TEXTURE name="giacomo_cuotlvehicle_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="giacomo_cuotlvehicle_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="giacomo_cuotlvehicle_team_hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="giacomo_vehicle_hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="giacomo_vehicle_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="giacomo_vehicle_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="giacomo_vehicle_team_hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="giacomo_vehicle.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="giacomo_vehicle_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="giacomo_vehicle_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="giacomo_vehicle_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Imperial_Horse.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="Imp_horse_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Imp_horse_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Imp_horse_Team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Imperial_Horse_Hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="Imp_cav_diffuse_Hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Imp_cav_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Imp_cav_Team_Hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Imperial_cav.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="Imp_cav_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Imp_cav_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Imp_cav_Team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Imperial_cav_Hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="Imp_cav_diffuse_Hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Imp_cav_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Imp_cav_Team_Hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="pulitore.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="pulitore_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="pulitore_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="pulitore_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="pulitore_chicken.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="pulitore_chicken_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="pulitore_chicken_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="pulitore_chicken_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="pulitoremech.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="pulitoremech_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="pulitoremech_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="pulitoremech_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="pulitoremech_hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="pulitoremech_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="pulitoremech_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="pulitoremech_team_hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="pulitore_chicken_Hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="pulitore_chicken_diffuse_Hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="pulitore_chicken_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="pulitore_chicken_team_Hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="pulitore_Hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="pulitore_diffuse_Hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="pulitore_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="pulitore_team_Hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="assassin_hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="assassin_diffuse_1024.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="assassin_dot3_1024.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="assassin_TC_1024.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="assassin.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="assassin_diffuse_512.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="assassin_dot3_512.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="assassin_TC_512.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="doge_musketeer_perf.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="doge_musketeer_perf_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="doge_musketeer_perf_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="doge_musketeer_hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="doge_musketeer_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="doge_musketeer_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="doge_musketeer_team_hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="doge_musketeer.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="doge_musketeer_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="doge_musketeer_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="doge_musketeer_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="renegade.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="renegade_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="renegade_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="renegade_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="renegade_perf.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="renegade_perf_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="condottieri_swordsman_perf_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="renegade_perf_hi.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="renegade_perf_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="condottieri_swordsman_perf_team_hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="renegade_hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="renegade_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="renegade_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="renegade_team_hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="condottieri_perf.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="condottieri_swordsman_perf_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="condottieri_swordsman_perf_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="condottieri_perf_hi.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="condottieri_swordsman_perf_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="condottieri_swordsman_perf_team_hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="musketeer_perf_hi.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="musketeer_perf_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="musketeer_perf_team_hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="musketeer_perf.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="musketeer_perf_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="musketeer_perf_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Imperialmusketeer.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="musketeer_diffuse_128.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="musketeer_dot3_128.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="musketeer_TC_128.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Imperialmusketeer_hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="musketeer_diffuse_1024.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="musketeer_dot3_1024.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="musketeer_TC_1024.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Gun_drone_chute.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Gun_drone_chute_diff.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Gun_drone_chute_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Imperialmusketeer_musket_128.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Imp_Musk_musket_diffuse_128.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Imp_Musk_musket_normal_256.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Imperialmusketeer_musket.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Imp_Musk_musket_diffuse_256.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Imp_Musk_musket_normal_256.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="desert_bird.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="desertbird_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="desertbird_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="juggernautBig_Hi.fx" base_material_name="scrollingclockwork.fx">
+    <TEXTURE name="Juggernaut_Big_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Juggernaut_Big_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Juggernaut_Big_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="juggernaut.fx" base_material_name="scrollingclockwork.fx">
+    <TEXTURE name="smalljuggernaut_diffuse_256.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="smalljuggernaut_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="smalljuggernaut_team_256.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="juggernaut_Hi.fx" base_material_name="scrollingclockwork.fx">
+    <TEXTURE name="smalljuggernaut_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="smalljuggernaut_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="smalljuggernaut_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="land_leviathan_drill_low.fx" base_material_name="unitocclusion.fx">
+    <TEXTURE name="land_leviathan_hand_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="land_leviathan_hand_team.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="land_leviathan_drill.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="land_leviathan_hand_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="land_leviathan_hand_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="land_leviathan_hand_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="land_leviathan_low.fx" base_material_name="unitocclusion.fx">
+    <TEXTURE name="land_leviathan_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="land_leviathan_team_hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="land_leviathan_Hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="land_leviathan_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="land_leviathan_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="land_leviathan_team_hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="Leonora_ctw.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="leonora_diffuse_ctw.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="leonora_Dot3_ctw.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="leonora_Team_ctw.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Leonora_low.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="leonora_diffuse.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="leonora_Dot3.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="leonora_Team.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Leonora.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="leonora_diffuse_ctw_512.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="leonora_Dot3_ctw_512.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="leonora_Team_ctw_512.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Vinci_Lord3.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Vincilord_3_diffuse.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="Vincilord_dot3.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="Vincilord_team.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Vinci_Lord2.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Vincilord_2_diffuse.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="Vincilord_dot3.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="Vincilord_team.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Vinci_Lord1.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Vincilord_1_diffuse.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="Vincilord_dot3.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="Vincilord_team.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Petruzzo_128.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="petruzzo_diffuse_128.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="petruzzo_dot3_128.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="petruzzo_team_128.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Petruzzo_256.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="petruzzo_diffuse_256.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="petruzzo_dot3_256.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="petruzzo_team_256.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Petruzzo.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="petruzzo_diffuse.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="petruzzo_Dot3.tga" role="normalmap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Petruzzo_hi.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="petruzzo_diffuse_1024.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="petruzzo_Dot3_1024.tga" role="normalmap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="reactorblimp.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="reactor_blimp_diffuse.tga" role="diffusemap" category="CTW_UNITS"/>
+    <TEXTURE name="reactor_blimp_normal.tga" role="normalmap" category="CTW_UNITS"/>
+    <TEXTURE name="reactor_blimp_teamcolor.tga" role="teamcolormap" category="CTW_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="reactorroped.fx" base_material_name="rain_god.fx">
+    <TEXTURE name="reactor_purple_diffuse.tga" role="diffusemap" category="CTW_UNITS"/>
+    <TEXTURE name="reactor_purple_normal.tga" role="normalmap" category="CTW_UNITS"/>
+    <TEXTURE name="reactor_purple_teamcolor.tga" role="teamcolormap" category="CTW_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="SteamCannon.fx" base_material_name="scrollingclockwork.fx">
+    <TEXTURE name="steamcannon_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="steamcannon_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="steamcannon_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value=" 11"/>
+  </MATERIAL>
+  <MATERIAL material_name="SteamCannon_hi.fx" base_material_name="scrollingclockwork.fx">
+    <TEXTURE name="steamcannon_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="steamcannon_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="steamcannon_team_hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="SteamFlyer.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="SteamFlyer_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="SteamFlyer_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="SteamFlyer_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="supplytruck.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="supply_truck_diffuse_512.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="supply_truck_dot3_512.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="supply_truck_team_512.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="ScavengerFlyer.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="scavenger_flyer_diffuse_512.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="pirate_flyer_dot3_512.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="pirate_flyer_team_512.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="PirateFlyer.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="pirate_flyer_diffuse_512.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="pirate_flyer_dot3_512.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="pirate_flyer_team_512.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="PirateFlyer_hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="pirate_flyer_diffuse_1024.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="pirate_flyer_dot3_1024.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="pirate_flyer_team_1024.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="spyscout.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="spyscout_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="spyscout_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="spyscout_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="Steamcopter_hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="Steamcopter_diffuse_Hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Steamcopter_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Steamcopter_team_Hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="Steamcopter.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="Steamcopter_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Steamcopter_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Steamcopter_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="steamflyer_Prop.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="steamflyer_prop.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="blank.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="blank.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="SteamFlyer_Hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="SteamFlyer_diffuse_Hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="SteamFlyer_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="SteamFlyer_team_Hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="Tankblimp_128.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="tankblimp_diffuse_128.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="tankblimp_dot3_128.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="tankblimp_team_128.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="35"/>
+  </MATERIAL>
+  <MATERIAL material_name="Tankblimp_256.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="tankblimp_diffuse_256.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="tankblimp_dot3_256.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="tankblimp_team_256.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="35"/>
+  </MATERIAL>
+  <MATERIAL material_name="Tankblimp_512.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="tankblimp_diffuse_512.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="tankblimp_dot3_512.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="tankblimp_team_512.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="35"/>
+  </MATERIAL>
+  <MATERIAL material_name="Transport_Destroyer.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="transport_destroyer_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="transport_destroyer_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="transport_destroyer_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Transport_Destroyer_hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="transport_destroyer_diffuse_HI.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="transport_destroyer_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="transport_destroyer_team_hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Venza.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="venza_diffuse.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="venza_Dot3.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="venza_Team.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Venza_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="venza_diffuse_hi.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="venza_Dot3_hi.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="venza_Team_hi.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Venza_vehicle.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="venza_vehicle_diffuse.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="venza_vehicle_dot3.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="venza_vehicle_team.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Venza_vehicle_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="venza_vehicle_diffuse_hi.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="venza_vehicle_dot3_hi.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="venza_vehicle_team_hi.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="VinciCaravan.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="caravan_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="caravan_normal.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="caravan_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="VinciCaravan_mid.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="caravan_diffuse_mid.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="caravan_normal_mid.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="caravan_team_mid.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="VinciCaravan_Hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="caravan_diffuse_Hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="caravan_normal_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="caravan_team_Hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="VinciWalker.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="vinciwalker_diffuse_512.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="vinciwalker_dot3_512.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="vinciwalker_team_512.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Worker.fx" base_material_name="Unitocclusion.fx">
+    <TEXTURE name="vinci_Worker_diffuse.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="vinci_Worker_dot3.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="vinci_Worker_team.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Worker_mid.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="vinci_Worker_diffuse_mid.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="vinci_Worker_dot3_mid.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="vinci_Worker_team_mid.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Worker_hi.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="Worker_diffuse_hi.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="Worker_dot3_hi.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="Worker_team_hi.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="Zeke_accessories.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="zeke_accessories_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="zeke_accessories_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="zeke_accessories_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="Zeke.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="zeke_diffuse_256.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="zeke_dot3_256.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="zeke_team_256.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Eggret.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="wildlife_eggret_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="wildlife_eggret_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Bat.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="wildlife_bat_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="wildlife_bat_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="BombTank.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="bombtank.tga" role="diffusemap" category="effects"/>
+    <TEXTURE name="bombtank_normal.tga" role="normalmap" category="effects"/>
+    <TEXTURE name="bombtank_team.tga" role="teamcolormap" category="effects"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="Drop_pod.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Drop_pod_diffuse.tga" role="diffusemap" category="effects"/>
+    <TEXTURE name="Drop_pod_dot3.tga" role="normalmap" category="effects"/>
+  </MATERIAL>
+  <MATERIAL material_name="ScavengerMiner.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="scavengerminer_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="miniclock_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="miniclock_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="70"/>
+  </MATERIAL>
+  <MATERIAL material_name="Mini_clockwork.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="miniclock_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="miniclock_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="miniclock_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="70"/>
+  </MATERIAL>
+  <MATERIAL material_name="Mini_clockwork_Hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="miniclock_diffuse_Hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="miniclock_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="miniclock_team_Hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="70"/>
+  </MATERIAL>
+  <MATERIAL material_name="CTW_SteamCannon.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="CTW_steamcannon_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="CTW_steamcannon_dot3.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="CTW_steamcannon_team.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="CTW_SteamCannon_hi.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="CTW_steamcannon_diffuse_hi.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="CTW_steamcannon_dot3_hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="CTW_steamcannon_team_hi.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="Revolver.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Vinci_gun_diffuse.tga" role="diffusemap" category="VINCI"/>
+  </MATERIAL>
+  <!--Generics-->
+  <MATERIAL material_name="Hawk.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="wildlife_hawk_diffuse.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="wildlife_eggret_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="flying_lizard.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Flying_lizard_diffuse_256.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="wildlife_flying_lizard_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="flying_lizard_desert.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Flying_lizard_desert_diffuse_256.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="wildlife_flying_lizard_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Glassprison.fx" base_material_name="glasscannon.fx">
+    <TEXTURE name="glassprison_diffuse.tga" role="diffusemap" category="effects"/>
+    <TEXTURE name="glassprison_dot3.tga" role="normalmap" category="effects"/>
+    <TEXTURE name="glassprison_team.tga" role="teamcolormap" category="effects"/>
+    <COLOR_PROP semantic="reflect_color" r="1" g="0.75" b="0" a="1"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>
+  </MATERIAL>
+  <MATERIAL material_name="MOTH_WHITE.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="moth_white_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="moth_white_dot3.tga" role="normalmap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="moth_white_shadow.fx" base_material_name="texture_shadowmapfloat.fx">
+    <TEXTURE name="moth_white_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="MOTH_GREEN.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="moth_green_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="moth_green_dot3.tga" role="normalmap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="moth_green_shadow.fx" base_material_name="texture_shadowmapfloat.fx">
+    <TEXTURE name="moth_green_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="MOTH_BROWN.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="moth_brown_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="moth_brown_dot3.tga" role="normalmap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="moth_brown_shadow.fx" base_material_name="texture_shadowmapfloat.fx">
+    <TEXTURE name="moth_brown_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="MOTH_GREY.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="moth_grey_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="moth_grey_dot3.tga" role="normalmap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="moth_grey_shadow.fx" base_material_name="texture_shadowmapfloat.fx">
+    <TEXTURE name="moth_grey_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="kangarat.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="kangarat_diffuse_256.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="kangarat_dot3_256.tga" role="normalmap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="armoredBeast.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="ArmoredBeast_diffuse_256.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="ArmoredBeast_dot3_256.tga" role="normalmap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="buffalo.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Buffalo.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="wildlife_flying_lizard_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="rhinosaur.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Rhinosaur_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="wildlife_flying_lizard_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="boar.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="boar_texture.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="wildlife_flying_lizard_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="deer.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="deer_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="wildlife_flying_lizard_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="lobster.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Fire_rook_diffuse.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="Fire_rook_dot3.tga" role="normalmap" category="Alim"/>
+  </MATERIAL>
+  <MATERIAL material_name="Darkglass_spider.fx" base_material_name="darkglass.fx" use_tileset="0">
+    <TEXTURE name="darkglass_spider_diffuse.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="darkglass_spider_dot3.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="bavarian.dds" role="environmentmap" category="BAVARIAN"/>
+    <TEXTURE name="darkglass_spider_env.tga" role="glossmap" category="alim"/>
+    <TEXTURE name="darkglass.dds" role="bonusmap" category="BIOMES" environment_map="1"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="1" g="0.9529412" b="0.8313726" a="1"/>
+    <FX_PROP semantic="material_shininess" value="20"/>
+  </MATERIAL>
+  <MATERIAL material_name="buffalo_arctic.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="Buffaloarctic.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="wildlife_flying_lizard_dot3.tga" role="normalmap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="snowOwl.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="snowOwl_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="eggret_dot3.tga" role="normalmap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="tern.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="tern_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="bat_dot3.tga" role="normalmap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="CTW_bat_arctic.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="bat_arctic_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="bat_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name="bat_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="CTW_bat.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="bat_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="bat_dot3.tga" role="normalmap" category="ART_UNITS"/>
+    <TEXTURE name="bat_team.tga" role="teamcolormap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="bat.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="bat_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="bat_dot3.tga" role="normalmap" category="ART_UNITS"/>
+  </MATERIAL>
+  <MATERIAL material_name="bat_arctic.fx" base_material_name="Dot3.fx">
+    <TEXTURE name="bat_arctic_diffuse.tga" role="diffusemap" category="ART_UNITS"/>
+    <TEXTURE name="bat_dot3.tga" role="normalmap" category="ART_UNITS"/>
+  </MATERIAL>
+  <!--Experiment Units-->
+  <MATERIAL material_name="log.fx" base_material_name="flamingunit.fx">
+    <TEXTURE name="log_diffuse.tga" role="diffusemap" category="Alim"/>
+    <TEXTURE name="damanhur_dot3.tga" role="normalmap" category="Alim"/>
+    <TEXTURE name="log_team.tga" role="teamcolormap" category="Alim"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="frankenstein.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="caravan_diffuse_512.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="caravan_normal_512.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="caravan_team_512.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="50"/>
+  </MATERIAL>
+  <MATERIAL material_name="wolfman.fx" base_material_name="unitDot3teamcolor.fx">
+    <TEXTURE name="carlini_diffuse_512.tga" role="diffusemap" category="vinci"/>
+    <TEXTURE name="carlini_Dot3_512.tga" role="normalmap" category="vinci"/>
+    <TEXTURE name="carlini_Team_512.tga" role="teamcolormap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="dracula.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="tankblimp_diffuse_HI.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="tankblimp_dot3_HI.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="tankblimp_team_HI.tga" role="teamcolormap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="35"/>
+  </MATERIAL>
+  <MATERIAL material_name="rally_flag.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="rally_flag_Diffuse.tga" role="diffusemap" category="PREFABS_generic_TEXTURES"/>
+    <TEXTURE name="rally_flag_Normal.tga" role="normalmap" category="PREFABS_generic_TEXTURES"/>
+    <TEXTURE name="rally_flag_TC.tga" role="teamcolormap" category="PREFABS_generic_TEXTURES"/>
+  </MATERIAL>
+  <!--Cinematic-->
+  <MATERIAL material_name="skybox.fx" base_material_name="flat.fx">
+    <TEXTURE name="skybox.tga" role="diffusemap" category="VINCI"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="Cin_CommandCenter.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="vinci_building_diffuse.tga" role="diffusemap" category="CINEMATIC"/>
+    <TEXTURE name="vinci_building_dot3.tga" role="normalmap" category="CINEMATIC"/>
+    <TEXTURE name="vinci_building_team.tga" role="teamcolormap" category="CINEMATIC"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="10"/>
+  </MATERIAL>
+  <MATERIAL material_name="Blimp_P.fx" base_material_name="clockwork.fx">
+    <TEXTURE name="reactor_blimp_diffuse.tga" role="diffusemap" category="CINEMATIC"/>
+    <TEXTURE name="reactor_blimp_normal.tga" role="normalmap" category="CINEMATIC"/>
+    <TEXTURE name="reactor_blimp_teamcolor.tga" role="teamcolormap" category="CINEMATIC"/>
+    <COLOR_PROP semantic="metal_reflect_color" r="0.8" g="0.8" b="1" a="1"/>
+    <FX_PROP semantic="material_shininess" value="35"/>
+  </MATERIAL>
+  <MATERIAL material_name="BirdFlock.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="bird_flock_diffuse.tga" role="diffusemap" category="CINEMATIC"/>
+    <TEXTURE name="bird_flock_dot3.tga" role="normalmap" category="CINEMATIC"/>
+    <TEXTURE name="bird_flock_team.tga" role="teamcolormap" category="CINEMATIC"/>
+  </MATERIAL>
+  <MATERIAL material_name="White_Horse_Hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="whitehorse.tga" role="diffusemap" category="CINEMATIC"/>
+    <TEXTURE name="Imp_cav_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Imp_cav_Team_Hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Black_Horse_Hi.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="blackhorse.tga" role="diffusemap" category="CINEMATIC"/>
+    <TEXTURE name="Imp_cav_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Imp_cav_Team_Hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+  <MATERIAL material_name="Blimp_reactor.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="reactor_diffuse.tga" role="diffusemap" category="CINEMATIC"/>
+    <TEXTURE name="reactor_normal.tga" role="normalmap" category="CINEMATIC"/>
+    <TEXTURE name="reactor_teamcolor.tga" role="teamcolormap" category="CINEMATIC"/>
+  </MATERIAL>
+  <MATERIAL material_name="desert_glass_02.fx" base_material_name="darkglass.fx" use_tileset="0">
+    <TEXTURE name="desert_glass_01_diffuse.tga" role="diffusemap" category="BIOMES"/>
+    <TEXTURE name="desert_glass_01_dot3.tga" role="normalmap" category="BIOMES"/>
+    <TEXTURE name="desert_glass_env.tga" role="glossmap" category="BIOMES"/>
+    <TEXTURE name="environment.dds" role="environmentmap" category="BIOMES"/>
+    <COLOR_PROP semantic="glass_material_color" r="0.3" g="0.68" b="0.87" a="1"/>
+  </MATERIAL>
+  <!-- Sample materials for distortion effects -->
+  <MATERIAL material_name="distortion.fx" base_material_name="distortion.fx">
+    <TEXTURE name="carlini_diffuse_512.tga" role="diffusemap" category="vinci"/>
+  </MATERIAL>
+  <MATERIAL material_name="simpledistortion.fx" base_material_name="simpledistortion.fx">
+    <TEXTURE name="white_square.tga" role="diffusemap" category="effects"/>
+  </MATERIAL>
+
+<!-- addons -->
+<!--     <TEXTURE name="blank.tga" role="diffusemap" category="VINCI"/> -->
+  <MATERIAL material_name="alim_efreet_norimADD.fx" base_material_name="unitDot3teamcolortwotone.fx">
+    <TEXTURE name="efreet_diffuse_hi.tga" role="diffusemap" category="alim"/>
+    <TEXTURE name="efreet_dot3_Hi.tga" role="normalmap" category="alim"/>
+    <TEXTURE name="efreet_Team_Hi.tga" role="teamcolormap" category="alim"/>
+    <!-- <COLOR_PROP semantic="reflect_color" r=".5" g=".9" b=".5" a=".5"/> -->
+    <COLOR_PROP semantic="glass_material_color" r=".5" g="0.6" b=".8" a="1"/>
+    <FX_PROP semantic="material_shininess" value="110"/>
+  </MATERIAL>
+
+  <MATERIAL material_name="Black_HorseADD.fx" base_material_name="UnitDot3teamcolor.fx">
+    <TEXTURE name="black_addon.tga" role="diffusemap" category="VINCI"/>
+    <TEXTURE name="Imp_cav_dot3_Hi.tga" role="normalmap" category="VINCI"/>
+    <TEXTURE name="Imp_cav_Team_Hi.tga" role="teamcolormap" category="VINCI"/>
+  </MATERIAL>
+</ROOT>
