@@ -16105,7 +16105,7 @@
   <UNIT type="ImperialHorseADD" scale="1.85" info_placement_radius="200" unit_size_override="1" must_have_events="1">
     <MODEL file=".\\art\\units\\horse_lod_3.BH3"/>
     <MAP name="Hierarchy with Tangent Map--Cached"/>
-    <SKELETON name="HorseLoneADD" type="units">
+    <SKELETON name="LONEHORSEaddon" type="units">
       <EXISTREF type="Ammo" name="Gia_Flare" ref_name="Gia_Flare"/>
       <EXISTREF type="Ammo" name="bullet" ref_name="Musket_ball"/>
       <EXISTREF type="Ammo" name="spellbullet" ref_name="Carlini_SniperBullet"/>
@@ -16117,13 +16117,13 @@
   <UNIT type="BlackHorseADD" scale="1.85" info_placement_radius="200" unit_size_override="1" must_have_events="1">
     <MODEL file=".\\art\\units\\horse_lod_3.BH3"/>
     <MAP name="Hierarchy with Tangent Map--Cached"/>
-    <SKELETON name="HorseLoneADD" type="units">
+    <SKELETON name="LONEHORSEaddon" type="units">
       <EXISTREF type="Ammo" name="Gia_Flare" ref_name="Gia_Flare"/>
       <EXISTREF type="Ammo" name="bullet" ref_name="Musket_ball"/>
       <EXISTREF type="Ammo" name="spellbullet" ref_name="Carlini_SniperBullet"/>
     </SKELETON>
     <PATH>
-      <MATERIAL name="Black_HorseADD.fx" type="units"/> <!--Actually, a missing texture-->
+      <MATERIAL name="Black_HorseADD.fx" type="units"/> <!--Originally a missing texture-->
     </PATH>
   </UNIT>
 
@@ -16132,7 +16132,7 @@
     <MAP name="Hierarchy with Tangent Map--Cached"/>
     <TRANSPARENCY offset="500.0f"/>
     <WEIGHT_OVERRIDE/>
-    <SKELETON name="GiantSawuADD" type="units">
+    <SKELETON name="GIANTSAWUaddon" type="units">
       <EXISTREF type="Ammo" name="SpellAmmo" ref_name="sawu_spell_01"/>
       <EXISTREF type="Ammo" name="GlassScimitar" ref_name="sawu_glass_scimitar"/>
       <EXISTREF type="Ammo" name="Ground_Erupt" ref_name="rock_eruption_emmiter"/>
@@ -16153,6 +16153,18 @@
     </SKELETON>
     <PATH>
       <MATERIAL name="sunidol_hi.fx" type="units"/>
+    </PATH>
+  </UNIT>
+
+  <UNIT type="GIANTFALLENIDOLaddon" scale="2.2" info_placement_radius="746">
+    <MODEL file=".\\art\\units\\cuotl\\fallen_idol_lod1.BH3"/>
+    <MAP name="Hierarchy with Tangent Map--Cached"/>
+    <WEIGHT_OVERRIDE/>
+    <SKELETON name="GIANTSUNIDOLaddon" type="units">
+      <EXISTREF type="Ammo" name="bullet" ref_name="doge_laser_ball"/>
+    </SKELETON>
+    <PATH>
+      <MATERIAL name="fallenidol_hi.fx" type="units"/>
     </PATH>
   </UNIT>
 

@@ -16582,6 +16582,52 @@
       </ANIMS>
     </GRAPH>
 
+    <GRAPH graph_name="GIANTFALLENIDOLaddon" graph_volume_offset="0" target_type="STONE">
+      <EVENTS>
+        <EVENT queue="SUNIDOL__SELECT"/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+        <EVENT/>
+      </EVENTS>
+      <ANIMS>
+        <ANIM name="Walk">
+          <VARIANT queue="Greater_Idol__Walk__0_Addon"/>
+        </ANIM>
+        <ANIM name="Jog">
+          <VARIANT queue="Greater_Idol__Walk__0_Addon"/>
+        </ANIM>
+        <ANIM name="Run">
+          <VARIANT queue="Greater_Idol__Walk__0_Addon"/>
+        </ANIM>
+        <ANIM name="CombatWalk">
+          <VARIANT queue="Greater_Idol__Walk__0_Addon"/>
+        </ANIM>
+        <ANIM name="RangedAttack">
+          <VARIANT queue="Greater_Idol__RangedAttack__0"/>
+          <VARIANT queue="Greater_Idol__RangedAttack__0"/>
+        </ANIM>
+        <ANIM name="ShotStabbed">
+          <VARIANT queue="Greater_Idol__ShotStabbed__0"/>
+        </ANIM>
+        <ANIM name="Scorched">
+          <VARIANT queue="FALLENIDOL__Scorched__0"/>
+        </ANIM>
+      </ANIMS>
+    </GRAPH>
+
 <!-- end of addons -->
 
     <GRAPH graph_name="TIMONIUM" graph_volume_offset="0" target_type="STONE">

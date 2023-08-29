@@ -1,6 +1,6 @@
 # RoL Giants Mod
 
-Really just my repository for whatever big stuff I can do in Rise of Legends. So far, this contains only units that can only be accessed via scenario editor under Empty Nation Slot. I've noted every new section with the word "addon" in the XML files. I've also edited every unit to not deal damage to its trampler 'cause that's a silly mechanic.
+Really just my repository for whatever big stuff I can do in Rise of Legends. So far, this contains units that can only be accessed via scenario editor under Empty Nation Slot. I've noted every new section with the word "addon" in the XML files. I've also edited every unit to not deal damage to its trampler 'cause that's a silly mechanic.
 
 Based on the DVD rerelease, in case that makes a difference.
 

@@ -21873,6 +21873,7 @@
 
 <!-- addons -->
 
+<!-- new nature units -->
   <UNIT class="units">
     <NAME>Horse</NAME>
     <SHORT/>
@@ -21932,11 +21933,11 @@
     <PREQ1>none</PREQ1>
     <TRIBE_MASK>0000</TRIBE_MASK>
     <SPELL_GRAFT>none</SPELL_GRAFT>
+    <ICONGRAFT>Condottieri Knight</ICONGRAFT>
     <GRAFT>none</GRAFT>
     <TYPENAME>Imperial Horse Addon</TYPENAME>
     <HELP>KANGARAT</HELP>
     <GRAPH>ImperialHorseADD</GRAPH>
-    <ICONGRAFT>Condottieri Knight</ICONGRAFT>
   </UNIT>
   <UNIT class="units">
     <NAME>Horse</NAME>
@@ -21997,14 +21998,14 @@
     <PREQ1>none</PREQ1>
     <TRIBE_MASK>0000</TRIBE_MASK>
     <SPELL_GRAFT>none</SPELL_GRAFT>
+    <ICONGRAFT>Condottieri Knight</ICONGRAFT>
     <GRAFT>none</GRAFT>
     <TYPENAME>Black Horse Addon</TYPENAME>
     <HELP>KANGARAT</HELP>
     <GRAPH>BlackHorseADD</GRAPH>
-    <ICONGRAFT>Condottieri Knight</ICONGRAFT>
   </UNIT>
 
-
+<!-- the actual giants -->
   <UNIT class="units">
     <NAME>Gargantuan Sun Idol</NAME>
     <SHORT/>
@@ -22063,12 +22064,78 @@
     <PREQ0>none</PREQ0>
     <PREQ1>none</PREQ1>
     <TRIBE_MASK>0010</TRIBE_MASK>
-    <SPELL_GRAFT>Elite Greater Idol</SPELL_GRAFT>
+    <SPELL_GRAFT>Fallen Idol</SPELL_GRAFT>
+    <ICONGRAFT>Elite Greater Idol</ICONGRAFT>
     <GRAFT>none</GRAFT>
     <TYPENAME>GargantuanSunIdol</TYPENAME>
     <HELP>GIANTSUNIDOLaddon</HELP>
     <GRAPH>GIANTSUNIDOLaddon</GRAPH>
-    <ICONGRAFT>Elite Greater Idol</ICONGRAFT>
+  </UNIT>
+
+  <UNIT class="units">
+    <NAME>Gargantuan Fallen Idol</NAME>
+    <SHORT/>
+    <CAT>Vehicle</CAT>
+    <OBJ_MASK>VXQW</OBJ_MASK>
+    <FLAGS>3yqp</FLAGS>
+    <FLAGS2>g</FLAGS2>
+    <WHERE>None</WHERE>
+    <SPAWN>0</SPAWN>
+    <CAP>0</CAP>
+    <SIZE>Building</SIZE>
+    <MOVES>28</MOVES>
+    <ACCEL>50</ACCEL>
+    <FAST>60</FAST>
+    <COST>100m/300e,x1</COST>
+    <RAMP_COST>20m ramp</RAMP_COST>
+    <TIME>750,x1</TIME>
+    <LOS>24</LOS>
+    <MANA>0</MANA>
+    <DOMAIN>Land</DOMAIN>
+    <TRAMPLE>100000v2n2l2</TRAMPLE>
+    <!--SPIKY>60o</SPIKY-->
+    <SPLAT>30h2n2,4,100,100,1</SPLAT>
+    <GM>0</GM>
+    <GA>40h2n1</GA>
+    <GR>0-16</GR>
+    <AM>0</AM>
+    <AA>40h1</AA>
+    <AR>0-16</AR>
+    <BA>50</BA>
+    <BR>1-20</BR>
+    <HITS>10000</HITS>
+    <WOUNDS>1</WOUNDS>
+    <SHIELD>0</SHIELD>
+    <FLY_HIGH>0</FLY_HIGH>
+    <FLY_LOW>0</FLY_LOW>
+    <RECHARGE>30</RECHARGE>
+    <ARMOR>H</ARMOR>
+    <AMMO_PER_ATT>1</AMMO_PER_ATT>
+    <TURN_SPEED>24,8,50</TURN_SPEED>
+    <PROJ_SPEED>100</PROJ_SPEED>
+    <POP>0</POP>
+    <RAMP_TIME>2/10</RAMP_TIME>
+    <CARRY>0</CARRY>
+    <CARRY_SIZE>10</CARRY_SIZE>
+    <FLOAT_HEIGHT/>
+    <CIRCLE_RADIUS>12</CIRCLE_RADIUS>
+    <BLOCK_RADIUS>6</BLOCK_RADIUS>
+    <SPACING>6</SPACING>
+    <TARGET_SIZE>6</TARGET_SIZE>
+    <UBER_SIZE>1</UBER_SIZE>
+    <GRID_X>1</GRID_X>
+    <GRID_Y>0</GRID_Y>
+    <PUSH_SIZE>13</PUSH_SIZE>
+    <FROM>none</FROM>
+    <PREQ0>none</PREQ0>
+    <PREQ1>none</PREQ1>
+    <TRIBE_MASK>0010</TRIBE_MASK>
+    <SPELL_GRAFT>Fallen Idol</SPELL_GRAFT>
+    <ICONGRAFT>Fallen Idol</ICONGRAFT>
+    <GRAFT>none</GRAFT>
+    <TYPENAME>GargantuanFallenIdol</TYPENAME>
+    <HELP>GIANTFALLENIDOLaddon</HELP>
+    <GRAPH>GIANTFALLENIDOLaddon</GRAPH>
   </UNIT>
 
   <UNIT class="units">
@@ -22129,12 +22196,12 @@
     <PREQ0>none</PREQ0>
     <PREQ1>none</PREQ1>
     <TRIBE_MASK>0010</TRIBE_MASK>
-    <SPELL_GRAFT>Sawu, the Dark Alim</SPELL_GRAFT>
+    <SPELL_GRAFT>Sawu, the Dark Alim L5</SPELL_GRAFT> <!--typename to take spells from-->
+    <ICONGRAFT>Sawu, the Dark Alim L5</ICONGRAFT> <!--typename icon to use-->
     <GRAFT>none</GRAFT>
     <TYPENAME>GargantuanSawu</TYPENAME> <!--xml name-->
     <HELP>GIANTSAWUaddon</HELP> <!--help.xml-->
     <CODETAG/> <!--an ID-->
     <GRAPH>GIANTEFREETaddon</GRAPH> <!--model and anims-->
-    <ICONGRAFT>Sawu, the Dark Alim</ICONGRAFT> <!--typename icon to use-->
   </UNIT>
 </ROOT>

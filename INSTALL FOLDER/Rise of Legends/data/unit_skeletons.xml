@@ -37206,7 +37206,7 @@
 
 <!-- addons -->
 
-  <SKELETON name="HorseLoneADD" type="Unit">
+  <SKELETON name="LONEHORSEaddon" type="Unit">
     <STANCEANIM anim="Idle">
       <ANIM file=".\\art\\units\\horse_idle1.bha" weight="8">
         <EVENT event_type="DynamicExist" start="0" end="5000" node="saddle $$$" slot="crew_0"/>
@@ -37320,7 +37320,7 @@
     </STANCEANIM>
   </SKELETON>
 
-  <SKELETON name="GiantSawuADD" type="Unit">
+  <SKELETON name="GIANTSAWUaddon" type="Unit">
     <STANCEANIM anim="Idle">
       <ANIM file=".\\art\\units\\alim\\sawu_idle1.bha" weight="11">
         <EVENT event_type="EyeCandy" type="sawu_legs_candy" start="0" end="10000" node="Bip01 Pelvis"/>
@@ -37522,7 +37522,7 @@
     <STANCEANIM anim="Walk">
       <ANIM file=".\\art\\units\\cuotl\\sunidol_walk01.bha">
         <EVENT event_type="EyeCandy" type="sunidol_footdust_candy" start="2600" end="2700" node="Bip01 L foot"/>
-        <EVENT event_type="EyeCandy" type="sunidol_footdust_candy" start="1320" end="1420" node="Bip01 R foot"/>
+        <EVENT event_type="EyeCandy" type="sunidol_footdust_candy" start="1200" end="1300" node="Bip01 R foot"/>
       </ANIM>
     </STANCEANIM>
     <STANCEANIM anim="Run">
